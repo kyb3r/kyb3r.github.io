@@ -13,6 +13,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+#patreon {
+    text-decoration: none;
+    color: #FB6E52
+  }
+
 #loading {
     width: 100vw;
     height: 100vh;
