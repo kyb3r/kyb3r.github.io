@@ -13,11 +13,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-#patreon {
-    text-decoration: none;
-    color: #FB6E52
-  }
-
 #loading {
     width: 100vw;
     height: 100vh;
@@ -245,6 +240,18 @@ body{
     font-family: 'Questrial', sans-serif;
 }
 
+#about a,
+#username a {
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+#about a:hover,
+#username a:hover {
+    text-decoration:underline;
+}
+
 #about span {
     margin:1vh 0px;
     display:block;
@@ -292,6 +299,8 @@ body{
     font-size:24px;
     font-weight:bold;
     margin:1vh 0px;
+    padding:0px 1px;
+    word-wrap: break-word;
 }
 
 .about_section {
@@ -299,11 +308,13 @@ body{
     font-family: 'Questrial', sans-serif;
     margin:2vh 0px;
     font-weight:bold;
+    word-wrap: break-word;
 }
 
 .bottom_section {
     margin:1vh 0px;
     font-size:14px;
+    word-wrap: break-word;
 }
 
 .bottom_section span {
@@ -389,10 +400,10 @@ body{
     #work {
         margin:0px;
     }
-    #projects {
+    .projects {
         columns:1;
     }
-    #projects section {
+    .projects section {
         width:88%;
     }
     #blogs {
@@ -435,13 +446,14 @@ body{
 
 ::-webkit-scrollbar {width:5px;height:5px;}
 ::-webkit-scrollbar-track {background:var(--bg-color);}
-::-webkit-scrollbar-thumb {background:var(--text-color);}:root {
+::-webkit-scrollbar-thumb {background:var(--text-color);}
+:root {
   --bg-color: rgb(10, 10, 10);
   --text-color: #fff;
   --blog-gray-color: rgb(180, 180, 180);
-  --background-image: linear-gradient(90deg, rgba(10, 10, 10, 0.6), rgb(10, 10, 10, 1)), url("https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w&#x3D;1450");
+  --background-image: linear-gradient(90deg, rgba(10, 10, 10, 0.6), rgb(10, 10, 10, 1)), url("https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=500&h=1000&q=80&fit=crop");
   --background-background: linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.6)),
-    url("") center center fixed;
+    url("https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=500&h=1000&q=80&fit=crop") center center fixed;
   --height: 50vh;
 }
 #display h1 {
@@ -462,7 +474,7 @@ body{
 }
 @media (max-width: 800px) {
   :root {
-    --background-image: linear-gradient(0deg, rgba(10, 10, 10, 1), rgb(10, 10, 10, 0)),
-    url("") !important;
+    --background-image: linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0)),
+    url("https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=500&h=1000&q=80&fit=crop") !important;
   }
 }
